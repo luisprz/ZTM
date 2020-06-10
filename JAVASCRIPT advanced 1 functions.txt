@@ -1,0 +1,127 @@
+//--------------------////   word function into const arrow functions   //////////----------------
+
+//Word function:
+
+function first() {
+    var greet = 'Hi';
+    function second() {
+        alert(greet);
+    }
+    return second;
+}
+
+var newFunc = first();
+newFunc();
+
+//but we dont use word functions (with var) anymore. now we use
+//const for static unmodificable function value name and arrow functions:
+
+const first = () => {
+    const greet = 'Hi';
+    const second = () => {
+        alert(greet);
+    }
+    return second;
+}
+
+const newFunc = first();
+newFunc();
+//this was to make sure every time it runs is a new slate. all states starts clean!. to minimize bugs and errors.
+
+
+
+//--------------------////   diferent topic comes now  //////////----------------
+
+// CLOSURES
+//its a javascript concept where 
+//A function runs, it gets executed and never executes again
+//BUT its going to remember there are references to those variables
+//So the childs scope always has access to parent scope
+//ej:
+const first = () => {
+    const value1 = 'Hi';
+    alert(value2);
+    const second = () => {
+        const value2 = 'hi2';
+        alert(value1);
+    }
+    return second;
+}
+const newFunc = first();
+newFunc();
+
+//aqui el child variable second tiene acceso al parent variable first y por ende a la variable value1 por ende puede proceder hacer alert
+//sin embargo el parent variable first no tiene acceso a las variables del child variable second, por ende se muestra como que nadie la esta usando y no puede proceder a hacer el alert de value1
+
+
+
+//--------------------////   diferent topic comes now  //////////----------------
+
+//CURRYING  = currificacion
+//En la ciencia de la computación, currificar es la técnica inventada por Moses Schönfinkel y Gottlob Frege
+//consiste en transformar una función que utiliza múltiples parametros en una secuencia de funciones que utilizan un único parametro.
+//ej currying:
+const multiply = (a, b) => a * b; //una funcion que utiliza multiples parametros
+const curriedMultiply = (a) => (b) => a * b; //secuencia de funciones que utilizan un solo parametro
+curriedMultiply(3); //esto hace que const curriedMultiply = (3) => (b) => 3 * b; and returns (b) => a * b
+curriedMultiply(3)(4); // === 12
+const multiplyBy5 = curriedMultiply(5);
+multiplyBy5(6); // === 30 porque al correr la primera const multiplyBy5 = curriedMultiply(5); b se hizo igual a 5. por ende ahora es a quien cambia (a)=6 y (b)=5
+
+
+
+//--------------------////   diferent topic comes now  //////////----------------
+
+//composing or composition
+//its the act of converting to functions into a single function
+//you can do it in secuence, where the output of the first is the input of the second but one needs to finish to start the other
+//or you can do it in parallel where both can be running at same time to return one value or one third function
+//ej:
+const compose = (f, g) => (a) => f(g(a)); //it reads take functions f and g, take parameter a, then take the value of function f wich needs value of function g 
+const sum = (num) => num + 1; //sum 1 to the value num wich is what returns compose wich is 5
+compose(sum, sum)(5); //it reads function sum will be function f and function sum will be function g, value of 5 will be parameter a.
+
+//o sea basicamente las 2 funciones son sum (f y g) por ende al correr g con el valor 5 siendo sum, esto es 6
+//luego corre f con el valor a devuelto por g siendo 6, al correr f =sum esto es 6+1 
+//el valor devuelto por compose es el valor de f por ende es 6+1 = 7.
+
+
+
+
+
+
+//--------------------////   EXERCISES   //////////----------------
+
+
+
+//Solve these problems:
+
+//#1 Create a one line function that adds adds two parameters
+const sum = (a, b) => a + b
+
+//Closure: What does the last line return?
+const addTo = x => y => x + y
+var addToTen = addTo(10)
+addToTen(3) // returns 13 because 3 = x and 10 = y
+
+//Currying: What does the last line return?
+const sum = (a, b) => a + b
+const curriedSum = (a) => (b) => a + b
+curriedSum(30)(1) // 31
+
+
+//Currying: What does the last line return?
+const sum = (a, b) => a + b
+const curriedSum = (a) => (b) => a + b
+const add5 = curriedSum(5)
+add5(12) // 17
+
+//Composing: What does the last line return?
+const compose = (f, g) => (a) => f(g(a));
+const add1 = (num) => num + 1;
+const add5 = (num) => num + 5;
+compose(add1, add5)(10) // 16   da igual si 10 +1 + 5  o si 10+5+1
+
+//What are the two elements of a pure function?
+1. Deterministic --> always produces the same results given the same inputs
+2. No Side Effects -->  It does not depend on any state, or data, change during a program’s execution. It must only depend on its input elements.

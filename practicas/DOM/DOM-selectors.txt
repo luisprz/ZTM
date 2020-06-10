@@ -1,0 +1,42 @@
+DOM Selectors
+--------------
+
+getElementsByTagName //por tag (h1, li, etc)
+getElementsByClassName //por nombre de la clase
+getElementById //por id
+
+{
+    //Usar estos 2 en vez de los 3 anteriores. ej document.querySelector("h1"); //document.querySelector("h1").style.background = "yellow"; este ultimo pone el background amarillo 
+    //style es para accesar a las propiedades css de cada tag dentro del selector
+    querySelector
+    querySelectorAll
+}
+
+getAttribute
+setAttribute
+
+
+##Changing Styles //usar styles en vez de get y set attribute ej document.querySelector("h1").style.background = "yellow";
+style.{property} //ok
+
+className //best
+classList //best
+
+classList.add
+classList.remove
+classList.toggle
+
+##Bonus
+innerHTML //DANGEROUS esto cambia lo que este dentro de la etiqueta ej document.querySelector("h1").innerHTML = "<strong>!!!!!</strong>"; esto cambia el h1 a: !!!! con strong tag osea en bold
+
+parentElement // ej document.querySelectorAll("li")[1].parentElement.parentElement.children; 
+              //o sea puedo entre sacar un elemento de una lista o ver cual es el elemento padre, padre y/o todos
+              //los elementos hijos de ese padre
+
+children      //ver los elementos hijos de un padre como en el ej anterior
+
+##It is important to CACHE selectors in variables
+//esto ultimo se refiere a que guardemos los selectores en una variable
+//ej->    var h1 = document.querySelector("h1"); 
+//esto es para guardarlo en memoria y que el browser no tenga que 
+//ir a mirar el DOM encontrar h1 y despues guardarlo en memoria, ya esta hecho

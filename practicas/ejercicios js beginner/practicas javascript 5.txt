@@ -1,0 +1,221 @@
+
+// Guess what answers you would get if you ran this in the
+// Javascript Console in Google Chrome. Once you have an answer  to the questions then 
+// check them by copying them and running it in the console yourself line by line 
+
+
+//Evaluate the below:
+5 + "34" === "534"
+5 - "4" === "1"
+10 % 5 === 0
+5 % 10 === 0
+"Java" + "Script" === "JavaScript "
+" " + " " === "  "
+" " + 0 === " 0"
+true === true
+true + 0 === 1
+true + true === 2    
+true + false === 1
+false + true === 1 
+false - true === -1
+3 - 4 === 1
+"Bob" - "bill" === NaN
+
+
+//Evaluate the below comparisons:
+5 >= 1 === true
+0 === 1 === false
+4 <= 1 === false
+1 != 1 === false
+"A" > "B" === false
+"B" < "C" === true
+"a" > "A" === true
+"b" < "A" === false
+true === false === false 
+true != true === false
+
+
+// Make the string: "Hi There! It's "sunny" out" by using the + sign:
+
+//=======================================================================================================================
+
+// Evaluate what answers you would get if you ran this in the
+// Javascript Console in Google Chrome. Answer the questions then 
+// check them by copying them and running it in the console yourself 
+// line by line 
+
+
+// add variable "firstName" and "lastName" // so that they equal your name
+var firstName = prompt("firstName");
+var lastName = prompt(" lastName");
+
+// create a variable that holds the answer // of "firstName" + " " + "lastName"
+var sum = firstName + " " + lastName
+
+// Evaluate this question. What is a + b?
+var a = 34;
+var b = 21;
+a = 2;
+a + b === 23 // what is the answer here? 23z
+
+// What is c equal to?
+var c; === undefined
+
+
+
+//==========================================================================================================
+// Make a Calculator! using prompt(), and variables, make a program that does the following:
+// 1. Prompts the user for first number.
+// 2. Stores that first number
+// 3. Prompts the user for the second number.
+// 4. stores that number and responds with the SUM by using an alert.  
+var firstNumber = prompt("enter first number");
+var secondNumber = prompt("enter second number");
+var sum = Number(firstNumber) + Number(secondNumber);
+alert("the sum for the 2 numbers is: " + sum);
+
+
+// BONUS: Make a program that can subtract, multiply, and also divide!
+var firstNumber = prompt("enter first number");
+var secondNumber = prompt("enter second number");
+var sum = Number(firstNumber) - Number(secondNumber);
+alert("the sum for the 2 numbers is: " + sum);
+
+var firstNumber = prompt("enter first number");
+var secondNumber = prompt("enter second number");
+var sum = Number(firstNumber) * Number(secondNumber);
+alert("the sum for the 2 numbers is: " + sum);
+
+var firstNumber = prompt("enter first number");
+var secondNumber = prompt("enter second number");
+var sum = Number(firstNumber) / Number(secondNumber);
+alert("the sum for the 2 numbers is: " + sum);
+
+
+
+//==============================================================================================================
+// Make a keyless car!
+// This car will only let you drive if you are over 18. Make it do the following:
+
+
+//using prompt() and alert(), ask a user for their age.
+// IF they say they are below 18, respond with:
+// "Sorry, you are too young to drive this car. Powering off"
+
+
+// IF they say they are 18, respond with:
+// "Congratulations on your first year of driving. Enjoy the ride!"
+
+// IF they say they are over 18, respond with:
+// "Powering On. Enjoy the ride!"
+var age = prompt("enter age");
+if (Number(age) < 18 ) {
+    alert("Sorry, you are too young to drive this car. Powering off");
+}
+else if (Number(age) === 18 ) {
+    alert("Congratulations on your first year of driving. Enjoy the ride!");
+} else {alert("Powering On. Enjoy the ride!")};
+
+
+//============================================================================================
+
+// Make a keyless car EVEN BETTER!
+// We are improving our car from previous exercise now.
+// Solutions to future exercises will be in the .js file (meaning Javascript file) from now on.
+
+var age = prompt("What is your age?");
+
+if (Number(age) < 18) {
+	alert("Sorry, you are too yound to drive this car. Powering off");
+} else if (Number(age) > 18) {
+	alert("Powering On. Enjoy the ride!");
+} else if (Number(age) === 18) {
+	alert("Congratulations on your first year of driving. Enjoy the ride!");
+}
+
+
+function ageVerify(age) {
+    
+    var age = prompt("enter your age");
+    if (Number(age) < 18) {
+        alert("Sorry, you are too young to drive this car. Powering off");
+    } else if (Number(age) > 18) {
+        alert("Powering On. Enjoy the ride!");
+    } else if (Number(age) === 18) {
+        alert ("enjoy first year driving");
+    }
+    else alert("you need to put your age");
+}
+ageVerify(age);
+
+//function expression
+var checkDriverAge2 = function () {
+    
+    var age = prompt("enter your age");
+    if (Number(age) < 18) {
+        alert("Sorry, you are too young to drive this car. Powering off");
+    } else if (Number(age) > 18) {
+        alert("Powering On. Enjoy the ride!");
+    } else if (Number(age) === 18) {
+        alert ("enjoy first year driving");
+    }
+    else alert("you need to put your age");
+}
+
+
+//1. Make the above code have a function called checkDriverAge(). Whenever you call this function, you will get prompted for age. Use Function Declaration to create this function.
+// Notice the benefit in having checkDriverAge() instead of copying and pasting the function everytime?
+
+//2. Create another function that does the same thing, called checkDriverAge2() using Function Expression.
+
+//BONUS: Instead of using the prompt. Now, only use console.log and make the checkDriverAge() function accept an argument of age, so that if you enter:
+checkDriverAge(92);
+it returns "Powering On. Enjoy the ride!"
+
+function checkDriverAge(age) {
+    if (Number(age) < 18) {
+        return("Sorry, you are too young to drive this car. Powering off");
+    } else if (Number(age) > 18) {
+        return("Powering On. Enjoy the ride!");
+    } else if (Number(age) === 18) {
+        return ("enjoy first year driving");
+    }
+    else return("you need to put your age");
+}
+checkDriverAge(19);
+
+//===============================================================================
+
+
+// using this array,
+// var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+
+
+// 1. Remove the Banana from the array.
+var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+array.shift();
+
+// 2. Sort the array in order.
+var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+array.sort();
+
+// 3. Put "Kiwi" at the end of the array.
+var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+array.push("Kiwi");
+
+// 4. Remove "Apples" from the array.
+var array = ["Banana", "Apples", "Oranges", "Blueberries"];
+array.splice(1,1); comenzando en index 1 borra el index 1 (Apples)
+
+// 5. Sort the array in reverse order. (Not alphabetical, but reverse
+// the current Array i.e. ['a', 'c', 'b'] becomes ['b', 'c', 'a'])
+
+var array = ["Banana", "Apples", "Oranges", "Blueberries", "Kiwi"];
+array.reverse();
+
+// using this array,
+// var array2 = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+// access "Oranges".
+var array = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+array3[1][1][0];
+array.splice([1][1][0]);// warning it isnt supported!!!
