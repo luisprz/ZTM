@@ -46,7 +46,7 @@ https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/le
 /// REACT INSTALATIONS 
 ////////////////////////////
 
-https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/8727240#overview //Installing create-react-app tool-> npm install -g create-react-app and creating react app -> npx create-react-app appName //npx is the new package runner tool that comes with npm 5.2 
+https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/8727240#overview //Installing create-react-app tool-> npm install -g create-react-app  ////and creating react app -> npx create-react-app appName //npx is the new package runner tool that comes with npm 5.2 
 
 https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/8757612#overview //Install Tachyons (npm install tachyons) //similar to bootstrap to have predefined class names that we can add to components and make it look great
 
