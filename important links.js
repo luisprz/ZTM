@@ -10,11 +10,14 @@ https://zerotomastery.io/community/?utm_source=udemy&utm_medium=coursecontent //
 
 https://zero-to-mastery.github.io/resources/ //CHEAT SHEETS AND MORE RESOURCES
 
+https://reacttraining.com/react-router/ //industry standard for react redux for changing pages and changing routes in our url
+
 https://zerotomastery.io/resources/
 
 https://semver.npmjs.com/ //to see what version you need to install for an npm package
 
 https://mdbootstrap.com/docs/react/ //templates and components that we can reuse!
+
 
 +/// NEWS To read :
 

@@ -50,3 +50,8 @@ https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/le
 
 https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/8757612#overview //Install Tachyons (npm install tachyons) //similar to bootstrap to have predefined class names that we can add to components and make it look great
 
+https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/10175206#overview //Install Redux -> npm install redux ..  npm i -S react
+
+https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/10175218#overview // install Logger middleware -> npm install redux-logger ////its to debug the app showing logs in the console
+
+https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/10175218#overview // install thunk middleware -> npm install redux-thunk -> asynch redux .... npm i -S react-redux
