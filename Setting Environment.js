@@ -42,6 +42,8 @@ https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/le
 
 https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/8727240#overview //Install Live server and Lodash (for extra js functions (ES6 IMPORTED those from node!) and install browserify in order to use it like the wat was used before webpack!) )
 
+https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc // Install JSON VIEW
+
 ////////////////////////////
 /// REACT INSTALATIONS 
 ////////////////////////////
