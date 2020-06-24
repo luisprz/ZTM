@@ -45,6 +45,22 @@ https://scotch.io/bar-talk/22-best-visual-studio-code-extensions-for-web-develop
 
 https://www.reddit.com/r/webdev/comments/gk6ugf/say_goodbye_to_logs_say_hello_to_realtime/  // REAL TIME DEBUGGING VSC
 
+https://github.com/daumann/ECMAScript-new-features-list // EcmaScript versions by year
+
+https://stripe.com/  para incluir pagos online // Para incluir pagos online
+
+https://www.twilio.com/ // To Send SMS or make Calls via web 
+
+https://public-apis.xyz/ // APIs for everything
+
+https://play.elevatorsaga.com/ // API Game
+
+https://www.youtube.com/watch?v=QwWnXNyhioM // instalar projecto de laravel descargado de github desde cero
+
+https://www.ibm.com/cloud/watson-speech-to-text // speech to text
+
+
+
 
 ////////////////////
 /// JAVASCRIPT

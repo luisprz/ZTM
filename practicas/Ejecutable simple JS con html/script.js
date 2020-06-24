@@ -18,7 +18,7 @@ var database = [//array
 
 var newsfeed = [
     {
-        username: "John",
+        username: "Luis",
         timeline: "Hey"
     },
     {
