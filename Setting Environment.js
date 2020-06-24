@@ -44,6 +44,8 @@ https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/le
 
 https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc // Install JSON VIEW
 
+
+
 ////////////////////////////
 /// REACT INSTALATIONS 
 ////////////////////////////
@@ -57,3 +59,10 @@ https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/le
 https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/10175218#overview // install Logger middleware -> npm install redux-logger ////its to debug the app showing logs in the console
 
 https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/10175218#overview // install thunk middleware -> npm install redux-thunk -> asynch redux .... npm i -S react-redux
+
+
+////////////////////////////
+/// EXTRAS INSTALATIONS 
+////////////////////////////
+
+npm install --save react-tilt // To install hover on things while mouse is over. --save isnt needed anymore because it gets added in the package.json now by default automatically
