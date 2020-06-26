@@ -55,9 +55,13 @@ https://public-apis.xyz/ // APIs for everything
 
 https://play.elevatorsaga.com/ // API Game
 
+https://www.ibm.com/cloud/watson-speech-to-text // speech to text
+
 https://www.youtube.com/watch?v=QwWnXNyhioM // instalar projecto de laravel descargado de github desde cero
 
-https://www.ibm.com/cloud/watson-speech-to-text // speech to text
+https://www.youtube.com/watch?v=5mjeyYOZ5Kg&list=PLIddmSRJEJ0sEY38mRTqiOJ4ivvymm_Ej&index=17 // instalar react en laravel crear componente y hacer deploy en heroku
+
+http://johnny-five.io/ //JS for ROBOTS 
 
 
 

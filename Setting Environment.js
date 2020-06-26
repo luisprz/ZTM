@@ -44,6 +44,8 @@ https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/le
 
 https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc // Install JSON VIEW
 
+https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/8817380#notes // Install nodemon -> npm init -y -> npm install nodemon –save-dev -> npm start and nodemon goes to check for changes
+
 
 
 ////////////////////////////
@@ -64,5 +66,9 @@ https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/le
 ////////////////////////////
 /// EXTRAS INSTALATIONS 
 ////////////////////////////
+
+https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/8803512#notes // Clarifai for AI API
+
+https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/8803510#notes // npm install react-particles-js // to install and see particles in the background
 
 npm install --save react-tilt // To install hover on things while mouse is over. --save isnt needed anymore because it gets added in the package.json now by default automatically
