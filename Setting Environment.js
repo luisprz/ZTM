@@ -46,7 +46,9 @@ https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgol
 
 https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/8817380#notes // Install nodemon -> npm init -y -> npm install nodemon –save-dev -> npm start and nodemon goes to check for changes
 
+https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/8817392?start=60#notes // installing express.JS -> npm install express
 
+https://www.postman.com/downloads/
 
 ////////////////////////////
 /// REACT INSTALATIONS 
