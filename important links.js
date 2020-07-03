@@ -4,6 +4,8 @@
 
 +///
 
+https://www.jetbrains.com/lp/devecosystem-2020/ //Dev Statistics
+
 https://github.com/zero-to-mastery/complete-web-developer-manual // THE REAL MANUAL
 
 https://zerotomastery.io/community/?utm_source=udemy&utm_medium=coursecontent // ZTM RESOURCES
@@ -17,6 +19,8 @@ https://zerotomastery.io/resources/
 https://semver.npmjs.com/ //to see what version you need to install for an npm package
 
 https://mdbootstrap.com/docs/react/ //templates and components that we can reuse!
+
+https://tunnelto.dev/ // Expose your local server to the world!
 
 
 +/// NEWS To read :
@@ -63,6 +67,21 @@ https://www.youtube.com/watch?v=5mjeyYOZ5Kg&list=PLIddmSRJEJ0sEY38mRTqiOJ4ivvymm
 
 http://johnny-five.io/ //JS for ROBOTS 
 
+////////////////////
+/// CSS
+////////////////////
+
+https://artvee.com/
+
+https://www.handz.design/
+
+https://thomaspark.co/2020/06/the-mad-magazine-fold-in-effect-in-css/
+
+https://www.shapedivider.app/
+
+https://gridjs.io/ //plugin to create tables 
+
+https://music-grid.surge.sh/#80-1028-32-2049-64-8-0-64-256-1028-16-2-32-74-0-40-128-288-64-512-1024-&311&classic //music grid
 
 
 
@@ -84,6 +103,7 @@ https://javascript.info/ // JS RESOURCES
 
 http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/ // HOW JS WORKS
 
+https://github.com/lydiahallie/javascript-questions#readme
 
 ////////////
 ///  open source ERP's
@@ -100,3 +120,10 @@ https://opensource.com/tools/enterprise-resource-planning
 
 https://www.jrebel.com/blog/git-cheat-sheet
 
+
+
+/////////////////////
+/// SQL
+/////////////////////
+
+https://sqlpd.com/
