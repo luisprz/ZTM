@@ -50,6 +50,8 @@ https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/le
 
 https://www.postman.com/downloads/
 
+https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/8820894#notes // Install CORS -> npm install cors // in order to be able to connect frontend and backend instances. import it: const cors = require(‘cors’), to apply middleware: app.se(cors())
+
 ////////////////////////////
 /// REACT INSTALATIONS 
 ////////////////////////////
