@@ -52,7 +52,9 @@ https://www.postman.com/downloads/
 
 https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/8820894#notes // Install CORS -> npm install cors // in order to be able to connect frontend and backend instances. import it: const cors = require(‘cors’), to apply middleware: app.se(cors())
 
-////////////////////////////
+https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/12240608#notes //Download Postgresql DB. command-> psql -U postgres -> to get into DB with name postgres and -> password: test. GUI password: perezluis1.
+
+ ////////////////////////////
 /// REACT INSTALATIONS 
 ////////////////////////////
 
