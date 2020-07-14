@@ -54,6 +54,9 @@ https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/le
 
 https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/12240608#notes //Download Postgresql DB. command-> psql -U postgres -> to get into DB with name postgres and -> password: test. GUI password: perezluis1.
 
+https://www.udemy.com/course/the-complete-web-developer-zero-to-mastery/learn/lecture/8860472#notes //Knex to connect our server to database -> npm install knex
+
+
  ////////////////////////////
 /// REACT INSTALATIONS 
 ////////////////////////////
