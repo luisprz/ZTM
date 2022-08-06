@@ -23,6 +23,7 @@ JAVASCRIPT COMPARISONS
 <=
 >
 <
+    
 JAVASCRIPT VARIABLES
 -----------------
 Var  son las variables a las cuales le asignas lo que desees var Three = 3 la variable tendrá asignado valor 3 sin embargo no puedes hacer Var 3 = 4 porque como regla no puede tener de nombre un numero ni un símbolo exceptuando $ y _ tampoco puede ser un js KEYWORDS
@@ -115,15 +116,14 @@ yield)
 ////////////////////////////////////////======================================================================================================================================================================================
 ////////////////////////////////////////======================================================================================================================================================================================
 
-
-JAVASCRIPT ADVANCED!!!
-
+///////////////////////////////////////
+JAVASCRIPT ADVANCED
 ///////////////////////////////////////
 
 
 
 
-DESTRUCTURING: 
+DESTRUCTURING OBJECTS: 
 const obj = {
     player: 'bobby',
     experience: 100,
@@ -136,6 +136,21 @@ const wizardLevel = obj.wizardLevel;
 //pero con destructuring lo podemos hacer mas facil
 const { player, experience } = obj;
 let { wizardLevel } = obj;
+
+
+DESTRUCTURING ARRAYS
+getting values from array:
+let numbers = [1,2,3,4];
+let one = numbers[1], two = numbers[2];
+console.log(two);
+It will print: 3
+
+with destructuring:
+let numbers = [1,2,3,4];
+let [one, two, three, cuatro] = numbers;
+console.log(three);
+It will print: 3
+
 
 
 
@@ -170,9 +185,44 @@ JAVASCRIPT COMPARISONS
 
 JAVASCRIPT VARIABLES
 -----------------
-var
+//var
 <!-- let (new in ECMAScript 6)-->  //puedes reasignarla let = something dentro de un scope. o sea su valor dependera del scope donde la estes llamando
 <!-- const (new in ECMAScript 6)--> //con const puedes cambiar las propiedades dentro del objeto pero no el objeto como valor. No puedes resignarle el valor. usarlo para variables o funciones que no necesitan cambiar nunca
+
+
+///////////////////////////
+Extra for Const, Let, Var
+///////////////////////////
+
+const no deja reasignar ni declarar variable de nombre igual porque es constante (as const cant be reasigned you need to initialize it when reassigned), 
+let deja reasignar pero no puedes declarar otra variable de nombre igual, 
+var si te deja declarar y reasignar (un block es codigo dentro de curly braces { } var no soporta block scoping por eso deja reasignar)
+
+///////////////////////////////
+Extra before and after ES6
+///////////////////////////////
+
+Before:
+-----------------
+let firstName = ‘John’, lastName = ‘Doe’;
+let user = {
+	firstName: firstName,
+	lastName: lastName
+}
+Console.log(user);
+
+
+After:
+-----------------
+let firstName = ‘John’, lastName = ‘Doe’;
+let user = { firstName, lastName }
+console.log(user);
+
+*object properties and values dont need to be repeated with ES6*
+
+
+
+
 
 JAVASCRIPT CONDITIONALS
 -----------------
@@ -236,22 +286,109 @@ JAVASCRIPT LOGICAL OPERATORS
 
 JAVASCRIPT FUNCTIONS
 -----------------
-var a = function name() {}
+    
+    
+Normal function: 
+-----------------
 function name() {}
 return
 
+    
+Variable function:
+-----------------
+var a = function name() {}
 
-<!-- () => (new in ECMAScript 6) -->   //fat arrow or arrow functions
-{
-    function add(a,b) { //en vez de estar haciendo una y otra y otra funcion
-        return a + b;
-    }
 
-    const add = (a, b) => a + b; //podemos hacer simplemente una arrow function
-    const add = (a, b) => {  //incluso lo podemos hacer con return, esto es lo mismo
-        return a + b;
-    }
+let result = function (i,j) {
+  return i+j;
 }
+console.log(result(2,3));
+
+
+
+Fat Arrow function:
+-----------------
+function add(a,b) { //en vez de estar haciendo una y otra y otra funcion (new in ECMAScript 6)    //fat arrow or arrow functions
+    return a + b;
+}
+
+const add = (a, b) => a + b; //podemos hacer simplemente una arrow function
+
+const add = (a, b) => {  //incluso lo podemos hacer con return, esto es lo mismo (solo necesita return y parentesis si son mas de 1 parametro
+    return a + b;
+}
+
+
+
+Describe the scope used with the this keyword (inside forEach)
+-------------------------------------------------------------
+"this", often referred to as the “dynamic this,” which refers to the object used to invoke the function.
+
+let message = {
+  hello : 'Hello',
+  names : ['Sue', 'Joe'],
+  showMessage: function() {
+    this.names.forEach(function(name) {
+      console.log(this.hello + ' ' + name);
+    });
+  }
+}
+message.showMessage();  
+
+
+in this case hello variable dont exists inside the foreach because out of scope
+
+
+
+
+let message = {
+  hello : 'Hello',
+  names : ['Sue', 'Joe'],
+  showMessage: function() {
+    let self = this;
+    this.names.forEach(function(name) {
+      console.log(self.hello + ' ' + name);
+    });
+  }
+}
+message.showMessage();  
+
+
+in this case hello exists because object (this) declared as self variable 
+
+
+
+"this" (inside arrow functions):
+---------------------------------
+arrow functions have implicit declared object inside scope (lexical scope built in) so we dont have to declare “this” again
+let message = {
+  hello : 'Hello',
+  names : ['Sue', 'Joe'],
+  showMessage: function() {
+    this.names.forEach(name => {
+      console.log(this.hello + ' ' + name);
+    });
+  }
+}
+message.showMessage();  
+
+
+***this es el objeto usado para invocar la funcion. dentro del scope de un for debe declararse denuevo sino no lo podra ver a menos que sea dentro de un arrow function	
+
+
+
+
+
+Rest & Spread (...):
+---------------------
+ // Define a function with two regular parameters and one rest parameter:
+function myBio(firstName, lastName, ...otherInfo) {
+    console.log(firstName, lastName, ...otherInfo);
+}
+
+// Invoke myBio function while passing five arguments to its parameters:
+myBio("Oluwatobi", "Sofela", "CodeSweetly", "Web Developer", "Male");              
+
 
 
 
