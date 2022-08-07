@@ -162,7 +162,7 @@ JAVASCRIPT TYPES
 3. Boolean
 4. Undefined
 5. Null
-<!-- 6. Symbol (new in ECMAScript 6) --> //the syntax is as follow: let sym1 = Symbol();
+6. Symbol (new in ECMAScript 6) --> //the syntax is as follow: let sym1 = Symbol();
 // Lo interesante de Symbol es que puedes tener 2 variables diferentes con los mismos valores pero una no sera igual a la otra, ej:
 {
     let sym2 = Symbol('foo');
@@ -171,7 +171,34 @@ JAVASCRIPT TYPES
 }
 
 
-7. Object
+7. Object  --> object is a Javascript Type but Array is not, because array can be contained in an object.
+{
+	var user = {
+		name: "john",
+		age: 34,
+		hobby: "soccer",
+		isMarried: false,
+		spells: ["abrakadabra", "shazam", "boo"],
+		shout: function() {
+			console.log("KLK!!!");
+		}
+	};
+	how to access the array this object?  --- >  user.spells[1];      it will return "shazam"
+	how to access the function in this object (METHOD)?  --- >  user.shout();      it will return "KLK!!!"
+		
+	var list = [
+	{
+		username: "andy",
+		password: "secre",
+	},
+	{
+		username: "jess",
+		password: "123",	
+	}
+	];
+	how to access this array?  --- >  list[0].password;     it will return "secre"
+}
+
 
 JAVASCRIPT COMPARISONS
 -----------------
