@@ -1,6 +1,51 @@
 Javascript structure and details
 
-JAVASCRIPT DATA TYPES
+Index:
+----JAVASCRIPT BASICS (A)----
+A-1 JAVASCRIPT DATA TYPES
+A-2 JAVASCRIPT COMPARISONS
+A-3 JAVASCRIPT VARIABLES
+A-4 JAVASCRIPT CONDITIONALS (control flow)
+A-5 JAVASCRIPT LOGICAL OPERATORS
+A-6 JAVASCRIPT FUNCTIONS
+A-7 JAVASCRIPT DATA STRUCTURES
+A-8 JAVASCRIPT LOOPING
+A-9 JAVASCRIPT KEYWORDS
+----JAVASCRIPT ADVANCED (B)----
+B-10 DESTRUCTURING OBJECTS: 
+B-11 DESTRUCTURING ARRAYS
+B-12 JAVASCRIPT TYPES
+B-13 JAVASCRIPT COMPARISONS
+B-14 JAVASCRIPT VARIABLES
+B-15 Extra for Const, Let, Var
+B-16 Extra before and after ES6 (variables & objects)
+B-17 JAVASCRIPT CONDITIONALS
+B-18 JAVASCRIPT LOGICAL OPERATORS
+B-19 JAVASCRIPT FUNCTIONS
+B-19.1 Normal function (function declaration)
+B-19.2 Variable function (function expression)
+B-19.3 Expressions: an expressions is something that produces a value
+B-19.4 Fat Arrow function:
+B-20 THIS
+B-20.1 Describe the scope used with the this keyword (inside forEach)
+B-20.2 object (this) declared as self variable
+B-21 "this" (inside arrow functions):
+B-22 Rest & Spread (...):
+B-23 JAVASCRIPT DATA STRUCTURES
+B-24 JAVASCRIPT LOOPING
+B-25 JAVASCRIPT KEYWORDS
+
+
+
+///////////////////////////////////////
+A JAVASCRIPT Basics
+///////////////////////////////////////
+
+
+
+
+
+A-1 JAVASCRIPT DATA TYPES
 -----------------
 1. Number es +,-,/,%(residuo de la división siendo el dividendo mult por un num entero mas cercano) es decir es number type es la propiedad de hacer operaciones con numeros
 2. String its just text inside “String” or ‘String’    10+”1” es 101 pero 10-“1” es 9  y “10”-“10” es NAN
@@ -15,7 +60,9 @@ born out of the need to have an efficient way to handle binary data in WebGL. A 
 Typed array views act like single-type arrays to a segment of an ArrayBuffer. There are views for all the usual numeric types, with self-descriptive names like Float32Array, Float64Array, Int32Array and Uint8Array. There's also a special view which has replaced the pixel array type in Canvas's ImageData: Uint8ClampedArray.
 
 
-JAVASCRIPT COMPARISONS
+
+
+A-2 JAVASCRIPT COMPARISONS
 -----------------
 !==
 ===
@@ -24,13 +71,14 @@ JAVASCRIPT COMPARISONS
 >
 <
     
-JAVASCRIPT VARIABLES
+A-3 JAVASCRIPT VARIABLES
 -----------------
 Var  son las variables a las cuales le asignas lo que desees var Three = 3 la variable tendrá asignado valor 3 sin embargo no puedes hacer Var 3 = 4 porque como regla no puede tener de nombre un numero ni un símbolo exceptuando $ y _ tampoco puede ser un js KEYWORDS
 <!-- let (new in ECMAScript 6)-->  a diferencia de var esta no funciona fuera de un scope. pero se puede reasignar dentro del scope
 <!-- const (new in ECMAScript 6)--> igual que let pero no se puede reasignar
 
-JAVASCRIPT CONDITIONALS (control flow)
+
+A-4 JAVASCRIPT CONDITIONALS (control flow)
 -----------------
 if
 else
@@ -41,7 +89,7 @@ else if  === if -> else if -> else
 <!-- switch -->
 
 
-JAVASCRIPT LOGICAL OPERATORS
+A-5 JAVASCRIPT LOGICAL OPERATORS
 -----------------
 
 &&  equals and
@@ -52,7 +100,7 @@ JAVASCRIPT LOGICAL OPERATORS
 
 
 
-JAVASCRIPT FUNCTIONS
+A-6 JAVASCRIPT FUNCTIONS
 -----------------
 var a = function name() {}   // este tipo de funcion se llama function expression el nombre de la variable sera llamado como funcion mientras que el nombre de la funcion es solo por estetica LAS FUNCIONES SON TAMBIEN VARIABLES EN SI
 function name() {} //function normal
@@ -60,12 +108,14 @@ return //toda funcion debe tener un return el cual devuelve el resultado y termi
 //we need to return the result in function else it can go undefined. after return the function ends the program exits
 <!-- () => (new in ECMAScript 6) -->
 
-JAVASCRIPT DATA STRUCTURES
+
+A-7 JAVASCRIPT DATA STRUCTURES
 -----------------
 Array  structure is --->  var array = [ {}, {}, [] ];
 Object structure is ---> var objectName = [{ ParameterName: "values" }, { ParameterName2: "values"  }];
 
-JAVASCRIPT LOOPING
+
+A-8 JAVASCRIPT LOOPING
 -----------------
 for
 while
@@ -73,7 +123,7 @@ do
 forEach (new in ECMAScript 5) // a pesar de que toma mas tiempo que un for (11ms vs 254ms), el foreach es mas entendible puesto que puedes aplicar DRY y llamar varias veces una misma funcion para trabajar con diferentes arreglos
 
 
-JAVASCRIPT KEYWORDS
+A-9 JAVASCRIPT KEYWORDS
 -----------------
 break
 case
@@ -117,13 +167,13 @@ yield)
 ////////////////////////////////////////======================================================================================================================================================================================
 
 ///////////////////////////////////////
-JAVASCRIPT ADVANCED
+B JAVASCRIPT ADVANCED
 ///////////////////////////////////////
 
 
 
 
-DESTRUCTURING OBJECTS: 
+B-10 DESTRUCTURING OBJECTS: 
 const obj = {
     player: 'bobby',
     experience: 100,
@@ -138,7 +188,10 @@ const { player, experience } = obj;
 let { wizardLevel } = obj;
 
 
-DESTRUCTURING ARRAYS
+
+
+B-11 DESTRUCTURING ARRAYS
+
 getting values from array:
 let numbers = [1,2,3,4];
 let one = numbers[1], two = numbers[2];
@@ -155,7 +208,7 @@ It will print: 3
 
 
 
-JAVASCRIPT TYPES
+B-12 JAVASCRIPT TYPES
 -----------------
 1. Number 
 2. String
@@ -200,7 +253,7 @@ JAVASCRIPT TYPES
 }
 
 
-JAVASCRIPT COMPARISONS
+B-13 JAVASCRIPT COMPARISONS
 -----------------
 
 !==
@@ -210,7 +263,7 @@ JAVASCRIPT COMPARISONS
 >
 <
 
-JAVASCRIPT VARIABLES
+B-14 JAVASCRIPT VARIABLES
 -----------------
 //var
 <!-- let (new in ECMAScript 6)-->  //puedes reasignarla let = something dentro de un scope. o sea su valor dependera del scope donde la estes llamando
@@ -218,16 +271,16 @@ JAVASCRIPT VARIABLES
 
 
 ///////////////////////////
-Extra for Const, Let, Var
+B-15 Extra for Const, Let, Var
 ///////////////////////////
 
 const no deja reasignar ni declarar variable de nombre igual porque es constante (as const cant be reasigned you need to initialize it when reassigned), 
 let deja reasignar pero no puedes declarar otra variable de nombre igual, 
 var si te deja declarar y reasignar (un block es codigo dentro de curly braces { } var no soporta block scoping por eso deja reasignar)
 
-///////////////////////////////
-Extra before and after ES6
-///////////////////////////////
+////////////////////////////////////////////////////////
+B-16 Extra before and after ES6 (variables & objects)
+////////////////////////////////////////////////////////
 
 Before:
 -----------------
@@ -251,7 +304,7 @@ console.log(user);
 
 
 
-JAVASCRIPT CONDITIONALS
+B-17 JAVASCRIPT CONDITIONALS
 -----------------
 if
 else
@@ -305,25 +358,26 @@ else if
 
 }
 
-JAVASCRIPT LOGICAL OPERATORS
+B-18 JAVASCRIPT LOGICAL OPERATORS
 -----------------
 &&
 ||
 !
 
-JAVASCRIPT FUNCTIONS
+B-19 JAVASCRIPT FUNCTIONS
 -----------------
     
     
-Normal function: 
+B-19.1 Normal function (function declaration): 
 -----------------
-function name() {}
+function name() { }
 return
 
     
-Variable function:
+B-19.2 Variable function (function expression):
 -----------------
-var a = function name() {}
+var newFunction = function() { };
+var newFunction = function name() { };
 
 
 let result = function (i,j) {
@@ -331,9 +385,13 @@ let result = function (i,j) {
 }
 console.log(result(2,3));
 
+B-19.3 Expressions: an expressions is something that produces a value
+-> 1+3;
+-> var a = 2;
+-> return true;
 
 
-Fat Arrow function:
+B-19.4 Fat Arrow function:
 -----------------
 function add(a,b) { //en vez de estar haciendo una y otra y otra funcion (new in ECMAScript 6)    //fat arrow or arrow functions
     return a + b;
@@ -347,9 +405,12 @@ const add = (a, b) => {  //incluso lo podemos hacer con return, esto es lo mismo
 
 
 
-Describe the scope used with the this keyword (inside forEach)
+B-20 THIS
 -------------------------------------------------------------
 "this", often referred to as the “dynamic this,” which refers to the object used to invoke the function.
+
+
+B-20.1 Describe the scope used with the this keyword (inside forEach)
 
 let message = {
   hello : 'Hello',
@@ -366,7 +427,7 @@ message.showMessage();
 in this case hello variable dont exists inside the foreach because out of scope
 
 
-
+B-20.2 object (this) declared as self variable 
 
 let message = {
   hello : 'Hello',
@@ -385,7 +446,7 @@ in this case hello exists because object (this) declared as self variable
 
 
 
-"this" (inside arrow functions):
+B-21 "this" (inside arrow functions):
 ---------------------------------
 arrow functions have implicit declared object inside scope (lexical scope built in) so we dont have to declare “this” again
 let message = {
@@ -406,7 +467,7 @@ message.showMessage();
 
 
 
-Rest & Spread (...):
+B-22 Rest & Spread (...):
 ---------------------
  // Define a function with two regular parameters and one rest parameter:
 function myBio(firstName, lastName, ...otherInfo) {
@@ -421,12 +482,13 @@ myBio("Oluwatobi", "Sofela", "CodeSweetly", "Web Developer", "Male");
 
 
 
-JAVASCRIPT DATA STRUCTURES
+B-23 JAVASCRIPT DATA STRUCTURES
 -----------------
 Array
 Object
 
-JAVASCRIPT LOOPING
+
+B-24 JAVASCRIPT LOOPING
 -----------------
 for
 while
@@ -434,7 +496,8 @@ do
 forEach (new in ECMAScript 5) 
 
 
-JAVASCRIPT KEYWORDS
+
+B-25 JAVASCRIPT KEYWORDS
 -----------------
 break
 case
