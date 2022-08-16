@@ -123,7 +123,7 @@ do
 forEach (new in ECMAScript 5) // a pesar de que toma mas tiempo que un for (11ms vs 254ms), el foreach es mas entendible puesto que puedes aplicar DRY y llamar varias veces una misma funcion para trabajar con diferentes arreglos
 
 
-A-9 JAVASCRIPT KEYWORDS
+A-9 JAVASCRIPT KEYWORDS  (Dont name variables or functions this way)
 -----------------
 break
 case
@@ -497,7 +497,7 @@ forEach (new in ECMAScript 5)
 
 
 
-B-25 JAVASCRIPT KEYWORDS
+B-25 JAVASCRIPT KEYWORDS (Dont name variables or functions this way)
 -----------------
 break
 case
